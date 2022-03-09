@@ -5,6 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul,
+li,
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
 body{
     background: #f1f1f1;
     font-family: "lato", sans-serif;
@@ -52,7 +58,7 @@ h1 span:nth-child(1){
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.86,0,0.07,1);
-    color: white;
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 .card-front,
@@ -70,7 +76,53 @@ h1 span:nth-child(1){
     background: #ed5d34;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+}
+.card-wrapper .card-front{
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover !important;
+}
+/* Application images des salles */
+.card-wrapper:nth-child(1) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1631&q=80)
+    ;
+}
+.card-wrapper:nth-child(2) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1507209696998-3c532be9b2b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+    ;
+}
+.card-wrapper:nth-child(3) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1557804500-7a58fbcd4d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80)
+    ;
+}
+.card-wrapper:nth-child(4) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80)
+    ;
+}
+.card-wrapper:nth-child(5) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1542089078-9086d071d8da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+    ;
+}
+.card-wrapper:nth-child(6) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80)
+    ;
+}
+.card-wrapper:nth-child(7) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1575886876783-ea3cbbc8204d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1434&q=80)
+    ;
+}
+.card-wrapper:nth-child(8) .card-front{
+    background: 
+        url(https://images.unsplash.com/photo-1554902843-260acd0993f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+    ;
 }
 /* La mise en couleur d'une carte sur deux */
 .card-wrapper:nth-child(even) .card-front{
@@ -83,11 +135,15 @@ h1 span:nth-child(1){
 .card-front p{
     font-size: 25px;
     line-height: 35px;
+    background: rgb(237,93,52);
+    background: linear-gradient(138deg, rgba(237,93,52,1) 0%, rgba(237,93,52,1) 35%, rgba(248,253,254,0) 100%);
 }
 .card-front .card-price{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #1a2f42;
+    background: linear-gradient(138deg, #1a2f42 0%, #1a2f42 35%, rgba(248,253,254,0) 100%);
 }
 .card-front span{
     font-size: 35px;
